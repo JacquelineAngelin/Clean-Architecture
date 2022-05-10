@@ -11,8 +11,8 @@ public class StudantRegister {
         this.repository = repository;
     }
     // COMMAND
-    public void executa(StudantRegisterDto dada) {
-        Studant novo = dada.criarStudant();
+    public void executa(StudantRegisterDto data) {
+        Studant novo = data.criarStudant();
         repository.register(novo);
     }
 
